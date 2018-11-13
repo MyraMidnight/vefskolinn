@@ -1,4 +1,4 @@
-#Ýmis skólaverkefni
+# Ýmis skólaverkefni
 This repository is a collection of little project during my school course at Vefskólinn, mostly for reference and what not.
 
 ## 1. önn (onn1)
