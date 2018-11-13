@@ -1,0 +1,32 @@
+* { box-sizing:border-box;}
+#weather {
+display:flex;
+flex-wrap:wrap;
+}
+section.forecastDay {
+	display:inline-block;
+	align-items:center;
+	text-align:center;
+	width:250px;
+}
+
+.forecastTime {
+	text-align:center;
+	border: solid 3px #eee;
+	margin:1rem;
+	padding:1rem;
+}
+section.forecastDay:nth-child(even) .forecastTime  {
+	background: #eee;
+	color: #000;
+}
+
+.forecastTime span.time {
+	display:block;
+	text-align:left;
+}
+.forecastTime span.weatherForecast {
+	display:block;
+	padding-top:.5rem;
+	font-size: 1.5rem;
+}

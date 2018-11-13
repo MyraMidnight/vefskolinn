@@ -1,0 +1,17 @@
+<svg width="960" height="32" viewBox="0 0 960 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>page_torn_out_lineless</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-3100 390)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 3100 -390L 4060 -390L 4060 -358L 3100 -358L 3100 -390Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="page_torn_out_lineless" clip-path="url(#clip-0)">
+<g id="paper">
+<use xlink:href="#path0_fill" transform="translate(3100 -390)" fill="#FFEEBA"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 4.04623 19.1058L 5.95343 19.1058C 7.60187 19.1058 9.01871 20.1754 10.1077 21.4106C 11.5907 23.0925 13.7636 24.1538 16.1849 24.1538C 20.6543 24.1538 24.2774 20.5377 24.2774 16.0769C 24.2774 11.6162 20.6543 8 16.1849 8C 13.7636 8 11.5907 9.06132 10.1077 10.7433C 9.01871 11.9784 7.60187 13.0481 5.95343 13.0481L 4.04623 13.0481C 1.81156 13.0481 0 11.24 0 9.00961L 0 0L 960 0L 960 32L 0 32L 0 23.1442C 0 20.9139 1.81156 19.1058 4.04623 19.1058Z"/>
+</defs>
+</svg>

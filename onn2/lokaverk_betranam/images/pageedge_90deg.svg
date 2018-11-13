@@ -1,0 +1,17 @@
+<svg width="32" height="32" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>pageedge_90deg</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1231 712)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 1231 -712L 1263 -712L 1263 -680L 1231 -680L 1231 -712Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="pageedge_90deg" clip-path="url(#clip-0)">
+<g id="bla&#195;&#176;s&#195;&#173;&#195;&#176;an">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1255.15 -712)" fill="#F2994A"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 4.04623 11.1058L 5.95343 11.1058C 7.60187 11.1058 9.01871 12.1754 10.1077 13.4106C 11.5907 15.0925 13.7636 16.1539 16.1849 16.1539C 20.6543 16.1539 24.2774 12.5377 24.2774 8.07692C 24.2774 3.61616 20.6543 0 16.1849 0C 13.7636 0 11.5907 1.06132 10.1077 2.74329C 9.01871 3.97841 7.60187 5.04808 5.95343 5.04808L 4.04623 5.04808C 1.81156 5.04808 0 3.23999 0 1.00961L 0 15.1442C 0 12.9138 1.81156 11.1058 4.04623 11.1058Z"/>
+</defs>
+</svg>

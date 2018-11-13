@@ -1,0 +1,60 @@
+#contentWrapper {
+	display:flex;
+	flex-direction:column;
+	margin-top: 70px;
+}
+nav#searchBar {
+	position: fixed;
+	top:0;
+	background: #fff;
+	width:100%;
+	padding:6px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+h1#heading {
+	display: inline-block;
+}
+input#search {
+}
+#popupOverlay {
+	position:fixed;
+	top:0;
+	height:100%;
+	width:100%;
+	background: rgba(51,51,51,.8);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#popup {
+	background:#fff;
+	height:100px;
+	width:100px;
+	border-radius: 30px;
+}
+#movieList {
+}
+#movieList img {
+	float:left;
+}
+.movieItem {
+	display:flex;
+	clear:both;
+	color:#333;
+}
+.movieItem:nth-child(odd) {
+	color:#fff;
+	background: #333;
+}
+#movieList ul {
+	margin:10px;
+}
+#movieList ul li {
+	list-style:none;
+}
+#movieList li.desc {
+	padding-top:10px;
+}

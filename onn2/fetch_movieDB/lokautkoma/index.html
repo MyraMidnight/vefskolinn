@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="is">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+
+		<div id="contentWrapper">
+			<!-- POPUP starts -->
+			<div id="popup" class="hidden flex">
+				<div id="popupContent">
+					<h2 id="popupName"></h2>
+					<nav id="popupNav">
+						<button class="tabLink activeTab" onclick="popupTabs(event, 'details')" type="button">Details</button>
+						<button class="tabLink" onclick="popupTabs(event, 'reviews')" type="button">Reviews</button>
+						<button class="tabLink" onclick="popupTabs(event, 'videos')" type="button">Videos</button>
+						<button class="tabLink" id="closePopup" type="button" onclick="hiddenToggle('popup')">close popup</button>
+					</nav>
+					<section id="content_reviews" class="tabContent">
+						<!-- reviews -->
+					</section>
+					<section id="content_videos" class="tabContent">
+						<!-- videos -->
+					</section>
+					<section id="content_details" class="tabContent">
+						<!-- details -->
+					</section>
+				</div>
+			</div>
+			<!-- POPUP ends -->
+			<nav id="searchBar">
+				<h1 id="heading">Popular movies!</h1>
+				<div>
+					<button id="sortYear" type="button" onclick="filterMovies('title')">sort by title</button>
+					<button id="sortRating" type="button" onclick="filterMovies('rating')">sort by rating</button>
+				</div>
+				<input id="searchInput" type="text" placeholder="search" onkeyup="searchMovies(event);"></input>
+			</nav>
+
+			<div id="movieWrapper">
+				<main id="movieList"></main>
+			</div>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,307 @@
+@import url('reset.css');
+
+* { box-sizing:border-box;}
+
+/* 
+basic formattting */
+html {	
+	font-family: Courier New;
+}
+body {
+	background-color:#F2994A;
+}
+p {
+	margin:16px 0 16px 0;
+}
+em {
+	font-weight:bold;
+}
+.hide { /*a class for JS to hide elements */
+	display:none;
+}
+/* 
+wrappers */
+#page_wrapper {
+	margin: 24px auto 16px auto;
+	max-width:960px;
+	min-height:100vh;
+	min-width:360px;
+	padding:0 8px;
+}
+
+#content_wrapper {
+	position:relative;
+	width:100%;
+	height: calc(100vh - (24px + 16px)); /* mínus #page_wrapper margin */
+}
+/*  
+the "book" */
+#contentpage {
+	position:relative;
+	margin:auto;
+	width:calc(100% - 4px);
+	height:100%;
+	border-radius:4px;
+	border-left:2px solid #fff;
+	box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.4);
+}
+.coverpage_white {
+	background-color:#fff;
+	color:#333;
+}
+.coverpage_orange {
+	background-color:#F2C94C;
+	color:#000;
+}
+
+#gormar { /*the springs along the edge */
+	position:absolute;
+}	
+
+/*  
+the header is a sidebar in mobile*/
+#header {
+	position:relative;
+	z-index: -5; /* pushes the header behind the 'book' to hide the nav */
+}
+.blad {	
+	position:absolute;
+	top:8px;
+	left:0;
+	margin:auto;
+	background: url("../images/page_torn_out.svg");
+	
+    background-position: left top;
+	border-radius:4px 4px 0 0;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);max-width:800px;
+	height:100vh;
+	width:100%;
+}
+.blad h1 {
+	font-size: 40px;
+	text-align: center;
+	font-weight:bold;
+	position: absolute;
+	width: calc(100% - 32px);
+	top:32px;
+	left:40px;
+}
+/* 
+website intro, landing  */
+#intro { 
+	width:80%;
+	margin:16px auto;
+}
+#page_window {
+	background: #FFEEBA url("../images/page_torn_out.svg") center right;
+	width:100%;s
+	margin:16px auto;
+	border-radius:4px;
+	padding:16px;
+	box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+}
+/* 
+"memo" paper, sidebar menu */
+.memo {
+	position:absolute;
+	top:4px;
+	left:0;
+	z-index:10;
+}
+#paperclip {
+	position:absolute;
+	top:0px;
+	left:-9px;
+	z-index:11;
+}
+.memo_paper {
+	position:absolute;
+	z-index:10;
+	top:4px;
+	left:0;
+	transform:rotate(5deg);
+	background:#fff;
+	width:132px;
+	height:64px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.memo_paper span {
+	position:absolute;
+	color:red;
+	top:12px;
+	z-index:10;
+	width:100%;
+	height:100%;
+	font-size:24px;
+	text-align:center;
+}
+
+/*
+footer */
+#footer {
+	margin-top:16px;
+	display:flex;
+	justify-content:space-around;
+}
+/* 
+----------------- mobile only  (max 700px) --------------------- */
+
+@media only screen and (max-width: 699px) {
+
+	#header nav ul {
+		position:absolute;
+		top: 0 /* 74px */;
+		left:116px;
+	}
+	
+	.show_sidebar {
+		position:absolute;
+		top:0;
+		left:95%;
+	}
+	#gormar { /* turns the "book" into a "notepad" when in mobile */
+		background: url("../images/gormur_90deg.svg");
+		width:100%;
+		height:40px;
+		top:-16px;
+		left:0;
+	}
+	#contentpage {
+		padding: 40px 16px;
+	}
+	/* 
+	sidebar navigation */
+	#header nav {
+		position:absolute;
+		top:79px;
+		left:72px;
+		font-size:24px;
+		line-height:32px;
+	}
+	#header nav ul {
+		position:relative;
+		left:0;
+	}
+	#main_nav h2 {
+		font-weight:bold;
+		text-decoration:underline;
+	}
+	#main_nav ul {
+		padding-left:24px;
+	}
+	#main_nav ul a {
+		text-decoration:none;
+		color:#000;
+	}
+	#main_nav a:hover,
+	#main_nav a:focus {
+		background:orange;
+		color:#000;
+		outline:none;
+	}
+	li.blog-link { /* hide the "blogg/fréttir" from mobile, else it is a dublicate*/
+		display:none;
+	}
+}
+
+/* 
+----------------- Tablet / landscape  (min 700px) --------------------- */
+@media only screen and (min-width:700px), 
+	(min-width:700px) and (orientation: landscape) {
+	/*
+	header	*/
+	#header {
+		min-height:24px;
+	}
+	.blad {	
+		position:relative;
+		margin:auto;
+		background: url("../images/bladsida.svg");
+		max-width:800px;
+		width:95%;
+		height:116px;
+		background-position: left top;
+		border-radius:4px 4px 0 0;
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+	}
+	.blad h1 {
+		font-size: 40px;
+		text-align: center;
+		font-weight:bold;
+		position: absolute;
+		width: calc(100% - 32px);
+		top:40px;
+		left:40px;
+	}
+	#page_wrapper {
+		padding-left:16px;
+		margin: 16px auto;
+	}
+	#contentpage {	
+		padding:40px 16px 40px 40px;
+	}
+	
+	#gormar { /*the springs along the edge */
+		background: url("../images/gormur.svg");
+		position:absolute;
+		left:-16px;
+		top:0;
+		width:40px;
+		height:100%;
+	}	
+	#page_window {
+		height:100px;
+		font-size: 40px;
+		padding:32px 0;
+	}
+	.memo { /* removes the paperclip memo from larger layout */
+		display:none;
+	}
+	/* 
+	header 'tab' navigation 	*/
+
+	#main_nav  {
+		position:absolute;
+		bottom:0;
+		right:16px;
+	}
+	#main_nav li {
+		display:inline-block;
+	}
+	#main_nav h2 {
+		display:inline-block;
+		color:#000;
+		height:56px;
+		width:144px;
+		padding-top:8px;
+		background: linear-gradient(180deg, #F2C94C 0%, #F2BA4B 67.96%, #F2994A 100%);
+		border-radius:4px 4px 0 0;
+		font-weight: bold;
+		text-align: center;
+		text-decoration:none;
+		transform: translate(-16px,24px);
+	}
+
+	#main_nav ul {
+		position:absolute;
+	}
+}
+/* 
+----------------- Desktop (960px) --------------------- */
+@media only screen and (min-width:960px) {
+
+	.blad {
+		height:160px;
+	}
+	.blad h1 {
+		font-size: 64px;
+		font-weight:normal;
+		left: 0;
+		top: 55px;
+		height: 144px;
+	}
+	
+}
